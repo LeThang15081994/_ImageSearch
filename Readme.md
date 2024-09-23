@@ -82,9 +82,19 @@ return nearest_image
 ### 4. Kết quả:
 Hình ảnh đầu vào:
 
-![Test Image](https://github.com/LeThang15081994/_ImageSearch-CBIR/blob/master/testimg/tiger3.jpg))
+![Test Image](https://github.com/LeThang15081994/_ImageSearch-CBIR/blob/master/testimg/tiger3.jpg)
 
 Kết quả search:
 
 ![Test Image](https://github.com/LeThang15081994/_ImageSearch-CBIR/blob/master/Figure_1.png)
+
+Tương tụ khi search với lion, fox, wolf và cheetah:
+
+![Test Image](https://github.com/LeThang15081994/_ImageSearch-CBIR/blob/master/Figure_2.png)
+
+![Test Image](https://github.com/LeThang15081994/_ImageSearch-CBIR/blob/master/Figure_3.png)
+
+![Test Image](https://github.com/LeThang15081994/_ImageSearch-CBIR/blob/master/Figure_4.png)
+
+![Test Image](https://github.com/LeThang15081994/_ImageSearch-CBIR/blob/master/Figure_5.png)
 
