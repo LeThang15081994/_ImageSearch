@@ -6,7 +6,6 @@ Dự án này là một hệ thống tìm kiếm hình ảnh dựa trên nội d
 ## Tính năng
 - Tìm kiếm hình ảnh tương tự từ một tập hợp hình ảnh lớn.
 - Hiển thị hình ảnh tương tự với tiêu đề và thông tin liên quan.
-- Giao diện người dùng đơn giản và trực quan.
 
 ## Cài đặt
 1. Clone repository:
@@ -77,4 +76,8 @@ ids = np.argsort(distance)[:index] # get 20 image have nearest image.
 nearest_image = [(paths[id], distance[id]) for id in ids]
 
 return nearest_image
-      
+```
+### 4. Kết quả:
+Hình ảnh đầu vào:
+
+![Test Image](https://github.com/LeThang15081994/_ImageSearch-CBIR/blob/master/testimg/tiger3.jpg))
