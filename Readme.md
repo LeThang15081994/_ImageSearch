@@ -60,7 +60,7 @@ Dự án này là một hệ thống tìm kiếm hình ảnh dựa trên nội d
 
      print("Vectors and paths saved.")
    ```
-### 2. Trích xuất đặc trưng hình ảnh Query và tính toán khoảng cách giữa vector hình ảnh Query và kho vector hình ảnh dataset:
+### 3. Trích xuất đặc trưng hình ảnh Query và tính toán khoảng cách giữa vector hình ảnh Query và kho vector hình ảnh dataset:
    ```bash
           image = feature_extract()
           model = image.get_model_extract()
