@@ -87,14 +87,31 @@ Hình ảnh đầu vào:
 Kết quả search:
 
 ![Test Image](https://github.com/LeThang15081994/_ImageSearch-CBIR/blob/master/Figure_1.png)
+Tương tụ khi search với fox:
 
-Tương tụ khi search với lion, fox, wolf và cheetah:
+![Test Image](https://github.com/LeThang15081994/_ImageSearch-CBIR/blob/master/testimg/fox2.jpg)
 
+Kết quả search:
 ![Test Image](https://github.com/LeThang15081994/_ImageSearch-CBIR/blob/master/Figure_2.png)
+Lion:
+
+![Test Image](https://github.com/LeThang15081994/_ImageSearch-CBIR/blob/master/testimg/lion3.jpg)
+
+Kết quả search:
 
 ![Test Image](https://github.com/LeThang15081994/_ImageSearch-CBIR/blob/master/Figure_3.png)
+Cheetah:
+
+![Test Image](https://github.com/LeThang15081994/_ImageSearch-CBIR/blob/master/testimg/cheetah1.jpg)
+
+Kết quả search:
 
 ![Test Image](https://github.com/LeThang15081994/_ImageSearch-CBIR/blob/master/Figure_4.png)
+Wolf:
+
+![Test Image](https://github.com/LeThang15081994/_ImageSearch-CBIR/blob/master/testimg/wolf1.jpg)
+
+Kết quả search:
 
 ![Test Image](https://github.com/LeThang15081994/_ImageSearch-CBIR/blob/master/Figure_5.png)
 
