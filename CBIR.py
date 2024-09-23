@@ -30,7 +30,7 @@ def search_img(img_path, index):
 
 if __name__ == "__main__":
     #vectors_data('dataset')
-    nearest_image = search_img('testimg/tiger3.jpg', 10)
+    nearest_image = search_img('testimg/tiger3.jpg', 10) # input query image and number of image will show
     
     # show the same image with query image
     axes = []
