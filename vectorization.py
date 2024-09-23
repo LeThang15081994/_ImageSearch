@@ -18,7 +18,7 @@ class feature_extract:
         model_extract = Model(inputs = vgg16_model.input, outputs = vgg16_model.get_layer("fc1").output)
         return model_extract
     
-    def img_preprocess(seft, img): # image preprocessing convert to tensor
+    def img_preprocess(self, img): # image preprocessing convert to tensor
         img = img.resize((224,224)) 
         img = img.convert('RGB') 
         x = image.img_to_array(img)

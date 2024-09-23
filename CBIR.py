@@ -35,7 +35,7 @@ if __name__ == "__main__":
     # show the same image with query image
     axes = []
     grid_size = int(math.ceil(math.sqrt(len(nearest_image))))
-    fig = plt.figure(figsize=(10,10))
+    fig = plt.figure(figsize=(10,8))
 
     for id in range(len(nearest_image)):
         draw_image = nearest_image[id]
