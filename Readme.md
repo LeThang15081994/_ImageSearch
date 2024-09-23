@@ -62,19 +62,19 @@ Dự án này là một hệ thống tìm kiếm hình ảnh dựa trên nội d
    ```
 ### 3. Trích xuất đặc trưng hình ảnh Query và tính toán khoảng cách giữa vector hình ảnh Query và kho vector hình ảnh dataset:
    ```bash
-          image = feature_extract()
-          model = image.get_model_extract()
-          img_search_vector = image.vector_normalized(model, img_path)
-      
-          with open("vectors.pkl", "rb") as f:
-              vectors = pickle.load(f)
-          with open("paths.pkl", "rb") as f:
-              paths = pickle.load(f)
-      
-          distance = np.linalg.norm(vectors - img_search_vector, axis=1)
-      
-          ids = np.argsort(distance)[:index] # get 20 image have nearest image.
-          nearest_image = [(paths[id], distance[id]) for id in ids]
-      
-          return nearest_image
+    image = feature_extract()
+    model = image.get_model_extract()
+    img_search_vector = image.vector_normalized(model, img_path)
+
+    with open("vectors.pkl", "rb") as f:
+        vectors = pickle.load(f)
+    with open("paths.pkl", "rb") as f:
+        paths = pickle.load(f)
+
+    distance = np.linalg.norm(vectors - img_search_vector, axis=1)
+
+    ids = np.argsort(distance)[:index] # get 20 image have nearest image.
+    nearest_image = [(paths[id], distance[id]) for id in ids]
+
+    return nearest_image
       
