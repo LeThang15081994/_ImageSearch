@@ -7,7 +7,7 @@ Dự án này là một hệ thống tìm kiếm hình ảnh dựa trên nội d
 - Tìm kiếm hình ảnh tương tự từ một tập hợp hình ảnh lớn.
 - Hiển thị hình ảnh tương tự với tiêu đề và thông tin liên quan.
 - Giao diện người dùng đơn giản và trực quan.
-- 
+
 ## Cài đặt
 1. Clone repository:
    ```bash
@@ -17,4 +17,3 @@ Dự án này là một hệ thống tìm kiếm hình ảnh dựa trên nội d
 2. Cài thư viện:
    ```bash
    pip install -r requirements.txt
-  ```
