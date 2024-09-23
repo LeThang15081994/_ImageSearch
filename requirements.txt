@@ -1,6 +1,6 @@
 python=3.12.5
 matplotlib
 numpy
-pandas
 tensorflow
 pillow
+pickle
