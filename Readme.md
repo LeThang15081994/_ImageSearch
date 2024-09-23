@@ -39,23 +39,42 @@ Dự án này là một hệ thống tìm kiếm hình ảnh dựa trên nội d
         print('processed !!!', img_path)
         return vector
    ```
-### 2. Lưu trữ các vector hình ảnh sử dụng thư viện pick:
+### 2. Lưu trữ các vector hình ảnh sử dụng thư viện pickle:
    ```bash
-      def store_vector(self, model, data_path):  # new method to store vectors
-           vectors = []
-           paths = []
-   
-           for img_path in os.listdir(data_path):
-               img_path_full = os.path.join(data_path, img_path)
-               img_vector = self.vector_normalized(model, img_path_full)
-   
-               vectors.append(img_vector)
-               paths.append(img_path_full)
-   
-           print("Saving............................................")
-           with open('vectors.pkl', 'wb') as f:
-               pickle.dump(vectors, f)
-           with open('paths.pkl', 'wb') as f:
-               pickle.dump(paths, f)
-   
-           print("Vectors and paths saved.")
+      # new method to store vectors
+     vectors = []
+     paths = []
+
+     for img_path in os.listdir(data_path):
+         img_path_full = os.path.join(data_path, img_path)
+         img_vector = self.vector_normalized(model, img_path_full)
+
+         vectors.append(img_vector)
+         paths.append(img_path_full)
+
+     print("Saving............................................")
+     with open('vectors.pkl', 'wb') as f:
+         pickle.dump(vectors, f)
+     with open('paths.pkl', 'wb') as f:
+         pickle.dump(paths, f)
+
+     print("Vectors and paths saved.")
+   ```
+### 2. Trích xuất đặc trưng hình ảnh Query và tính toán khoảng cách giữa vector hình ảnh Query và kho vector hình ảnh dataset:
+   ```bash
+          image = feature_extract()
+          model = image.get_model_extract()
+          img_search_vector = image.vector_normalized(model, img_path)
+      
+          with open("vectors.pkl", "rb") as f:
+              vectors = pickle.load(f)
+          with open("paths.pkl", "rb") as f:
+              paths = pickle.load(f)
+      
+          distance = np.linalg.norm(vectors - img_search_vector, axis=1)
+      
+          ids = np.argsort(distance)[:index] # get 20 image have nearest image.
+          nearest_image = [(paths[id], distance[id]) for id in ids]
+      
+          return nearest_image
+      
