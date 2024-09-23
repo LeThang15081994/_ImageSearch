@@ -30,7 +30,7 @@ def search_img(img_path):
 
 if __name__ == "__main__":
     #vectors_data('dataset')
-    nearest_image = search_img('testimg/cheetah1.jpg')
+    nearest_image = search_img('testimg/fox3.jpg')
     axes = []
     grid_size = int(math.sqrt(10))
     fig = plt.figure(figsize=(10,5))
