@@ -31,7 +31,7 @@ class feature_extract:
         img = Image.open(img_path)
         img_tensor = self.img_preprocess(img)
 
-        vector = model.predict(img_tensor)[0] # get value from 2D to 1D
+        vector = model.predict(img_tensor)[0] # get vector from 2D to 1D
         vector = vector / np.linalg.norm(vector) # normalized
         print('processed !!!', img_path)
         return vector
