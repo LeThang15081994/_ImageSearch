@@ -102,7 +102,7 @@ Kết quả search:
 ![Test Image](https://github.com/LeThang15081994/_ImageSearch-CBIR/blob/master/Figure_3.png)
 Cheetah:
 
-![Test Image](https://github.com/LeThang15081994/_ImageSearch-CBIR/blob/master/testimg/cheetah1.jpg)
+![Test Image](https://github.com/LeThang15081994/_ImageSearch-CBIR/blob/master/testimg/Cheetah2.jpg)
 
 Kết quả search:
 
