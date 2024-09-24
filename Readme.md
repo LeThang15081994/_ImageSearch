@@ -46,11 +46,11 @@ vectors = []
 paths = []
 
 for img_path in os.listdir(data_path):
-   img_path_full = os.path.join(data_path, img_path)
-   img_vector = self.vector_normalized(model, img_path_full)
-
-   vectors.append(img_vector)
-   paths.append(img_path_full)
+      img_path_full = os.path.join(data_path, img_path)
+      img_vector = self.vector_normalized(model, img_path_full)
+   
+      vectors.append(img_vector)
+      paths.append(img_path_full)
 
 print("Saving............................................")
 with open('vectors.pkl', 'wb') as f:
